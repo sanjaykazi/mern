@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container {
+                border: solid 1px orange;
+                display: flex;
+                margin: 2px;
+                padding: 2px;
+                flex-direction: row;
+                height: 500px;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .box {
+                border: solid 2ox green;
+                display: flex;
+                margin: 2px;
+                padding: 2px;
+                flex-direction: column;
+            }
+            img {
+                height: 200px;
+            }
+            #box2 {
+                box-shadow: 5px 5px 30px 12px skyblue;
+            }
+            #box1 {
+                text-shadow: 5px 5px 10px lightseagreen;
+            }
+            @media (max-width: 640px) {
+                .container {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="box1">
+                <h1>Sanjay</h1>
+                <h1>Kazi</h1>
+            </div>
+            <div class="box" id="box2">
+                <img src="profile.jpeg" alt="sanjay kazi">
+            </div>
+        </div>
+    </body>
+</html>

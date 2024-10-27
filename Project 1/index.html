@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Bookmark Example</title>
+    <style>
+        /* Remove default padding and list style from ul */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Arrange li items horizontally */
+        nav ul li {
+            display: inline-block;  /* OR display: inline-block; */
+            margin-right: 20px; /* Add spacing between items */
+        }
+
+        /* Optional: Style the links */
+        nav ul li a {
+            text-decoration: none;  /* Remove underline from links */
+            color: black;            /* Set text color */
+            font-size: 18px;         /* Adjust font size */
+        }
+
+        /* Optional: Add hover effect to links */
+        nav ul li a:hover {
+            color: pink;             /* Change color on hover */
+        }
+        thead {
+            vertical-align: middle;
+            text-align: center;
+            background-color: #f2f2f2; /* Optional: Add background color */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Table of Contents</h1>
+    <!-- Links to the bookmarks -->
+    <ul>
+        <li><a href="#section1">Go to Section 1</a></li>
+        <li><a href="#section2">Go to Section 2</a></li>
+        <li><a href="#section3">Go to Section 3</a></li>
+    </ul>
+
+    <!-- Target section 1 -->
+    <h2 id="section1">Section 1</h2>
+    <p>This is the content of section 1.</p>
+
+    <!-- Target section 2 -->
+    <h2 id="section2">Section 2</h2>
+    <p>This is the content of section 2.</p>
+
+    <!-- Target section 3 -->
+    <h2 id="section3">Section 3</h2>
+    <p>This is the content of section 3.</p>
+    <ul>
+        <li>badiya</li>
+        <li>hai</li>
+        <li>bhai</li>
+    </ul>
+    <div>
+        <h6>
+            <p>EMMET Plugin to baap hai baap</p>
+        </h6>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+    <a href="https://www.google.com">Google</a>
+    <a href="mailto:sanjaykazi1149@gmail.com">Email Me</a>
+    <a href="tel:7295038827">Call Me</a>
+    <table border="1">
+        <thead>
+            <th>
+                <tr>
+                    <td rowspan="3">Day</td>
+                    <td colspan="3">Seminar</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Schedule</td>
+                    <td rowspan="2">Topic</td>
+                </tr>
+                <tr>
+                    <td>Begin</td>
+                    <td>End</td>
+                </tr>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8.00 AM</td>
+                <td rowspan="2">5.00 PM</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8.00 AM</td>
+                <td>11.00 AM</td>
+                <td rowspan="3">Xpath<hr>XSL Transformations</td>
+            </tr>
+            <tr>
+                <td>11.00 AM</td>
+                <td>2.00 PM</td>
+            </tr>
+            <tr>
+                <td>2.00 PM</td>
+                <td>5.00 PM</td>
+                <!-- <td rowspan="1.5">XSL Transfromation</td> -->
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8.00 AM</td>
+                <td>12.00 PM</td>
+                <td>XSL Formating Objects</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
