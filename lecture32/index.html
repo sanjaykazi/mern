@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS 3D Transforms</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                width: 100vw;
+            }
+            .container {
+                height: 100%;
+                width: 100%;
+                background-color: rgb(205, 250, 235);
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin: 2rem;
+                gap: 2rem;
+                overflow: hidden;
+            }
+            .item {
+                height: 200px;
+                width: 200px;
+                background-color: rgb(222, 78, 78);
+                border: 2px solid black;
+                text-align: center;
+                padding: 2rem;
+                margin: 3rem;
+            }
+            .rotatex:hover {
+                transform: rotateX(45deg)
+            }
+            .rotatey:hover {
+                transform: rotateY(45deg)
+            }
+            .rotatez:hover {
+                transform: rotateZ(45deg)
+            }
+            .translatex:hover {
+                transform: translateX(100px);
+            }
+            .translatey:hover {
+                transform: translateY(100px);
+            }
+            .translatez:hover {
+                transform: perspective(300px) translateZ(100px);
+            }
+            .scalex:hover{
+                transform: scaleX(1.2);
+            }
+            .scaley:hover{
+                transform: scaleY(1.2);
+            }
+            .scalez:hover{
+                transform: perspective(300px) scaleZ(1.5) rotateY(30deg) skewX(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item rotatex">rotate X</div>
+            <div class="item rotatey" >rotate Y</div>
+            <div class="item rotatez">rotate Z</div>
+            <div class="item translatex">translate X</div>
+            <div class="item translatey">translate Y</div>
+            <div class="item translatez">translate Z</div>
+            <div class="item scalex">scale X</div>
+            <div class="item scaley">scale Y</div>
+            <div class="item scalez">scale Z</div>
+        </div>
+    </body>
+</html>
