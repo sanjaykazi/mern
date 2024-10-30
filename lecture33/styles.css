@@ -3,8 +3,8 @@
 :root {
     --primary-color: rgb(25, 96, 110);
     --accent-color: rgb(51, 243, 214);
-    --text-color: rgb(247, 24, 24);
-    --link-color: rgb(40, 62, 226);
+    --text-color: rgb(39, 220, 190);
+    --link-color: rgb(44, 208, 245);
     --background-color: #ffffff;
     --light-gray: #f0f0f0;
     --gray: #808080;
@@ -235,7 +235,7 @@ a{
     border: none;
     border-radius: 0.625rem;
     margin-top: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     padding: 1.8rem 2.5rem;
 }
 .company-logo{
@@ -261,5 +261,90 @@ a{
     .company-title{
         font-size: 2.3rem;
         font-weight: bold;
+    }
+}
+.feature-container{
+    background-color: rgb(222, 219, 219);
+    padding: 2.5rem 0;
+    text-align: center;
+
+}
+.feature-content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.main-infor{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main-title{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.main-description{
+    color: #808080;
+}
+.feature-grid{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1.3rem;
+}
+.fefature-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 111, 193);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+.feature-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+.feature-svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.feature-title{
+    color: azure;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.feature-description{
+    color: azure;
+}
+.fefature-card:nth-child(2){
+    background-color: rgb(229, 162, 173);
+}
+.fefature-card:nth-child(3){
+    background-color: rgb(233, 75, 186);
+}
+.fefature-card:nth-child(4){
+    background-color: rgb(91, 216, 72);
+}
+.fefature-card:nth-child(5){
+    background-color: rgb(164, 41, 62);
+}
+.fefature-card:nth-child(6){
+    background-color: rgb(50, 20, 160);
+}
+@media screen and (max-width:768px) {
+    .feature-grid{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
