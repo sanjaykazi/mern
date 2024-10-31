@@ -28,6 +28,9 @@ body {
 a{
     text-decoration: none;
 }
+
+/* header */
+
 .header_content{
     max-width: 1280px;
     display: flex;
@@ -104,6 +107,9 @@ a{
     width: 1.5rem;
 
 }
+
+/* content */
+
 .main-section {
     max-width: 1280px;
     display: flex;
@@ -218,6 +224,9 @@ a{
         width: 78%;
     }
 }
+
+/* company container  */
+
 .company-container{
     display: flex;
     flex-direction: column;
@@ -263,6 +272,9 @@ a{
         font-weight: bold;
     }
 }
+
+/* feature container  */
+
 .feature-container{
     background-color: rgb(222, 219, 219);
     padding: 2.5rem 0;
@@ -349,6 +361,8 @@ a{
     }
 }
 
+/* testimonial container  */
+
 .testimonial-container{
     background-color: rgb(252, 251, 251);
     margin: 0 auto;
@@ -408,16 +422,20 @@ a{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* newsletter container  */
+
 .newsletter-container{
     background-color: white;
     max-width: 1280px;
-    
+    /* overflow: hidden; */
     height: 40vh;
     margin: 0 auto;
 }
 .newsletter-content{
     display: flex;
     background-color: #f0f0f0;
+    height: 100%;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -425,8 +443,11 @@ a{
     width: 50%;
     height: 100%;
     display: none;
+    position: relative;
 }
 .news-left img{
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -446,13 +467,16 @@ a{
     padding: 0 3rem;
 }
 .news-title{
-    font-size: 1.5rem;
+    font-size: 4rem;
     color: blue;
     font-weight: bold;
+    text-align: left;
 }
 .news-desc{
     text-align: left;
     color: grey;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
 }
 .news-form{
     padding: 0 3rem;
@@ -488,6 +512,8 @@ a{
     .news-left{
         display: block;
         width: 50%;
+        /* height: 100%; */
+        /* overflow: hidden; */
     }
     .news-right{
         width: 50%;
@@ -507,6 +533,123 @@ a{
 }
 @media screen and (min-width:640px) {
     .news-title{
-        font-size: ;
+        font-size: 1rem;
+    }
+}
+
+/* footer */
+
+.footer-container{
+    background-color: white;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+}
+.footer{
+    max-width: 1280px;
+    /* padding: 1rem 2.4rem; */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+.footer-top{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+.logo-svg{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.28rem;
+    font-weight: bold;
+    color: black;
+    padding-left: 2rem;
+}
+.compn-logo{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: -1.9rem;
+}
+.social-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-top: -3rem;
+}
+.filler-text{
+    font-size:  1rem;
+    color: #777;
+    padding-left: 2rem;
+}
+.socials{
+    display: flex;
+    gap: 0.8rem;
+    padding-left: 2rem;
+    margin-top: -1.5rem;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9rem;
+    padding: 2rem 1rem;
+    padding-top: 2rem;
+}
+.footer-grid-heading{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+ul {
+    list-style-type: none;
+}
+.footer-link{
+    color: #555;
+    font: 0.86rem;
+}
+.footer-link-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.footer-grid-heading{
+    margin-bottom: 1.5rem;
+}
+.footer-copyright{
+    font-size: 0.75rem;
+    color: var(--dark-gray);
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid grey;
+    padding-top: 1rem;
+
+}
+@media screen and (max-width: 1080px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-top{
+        padding-left: 10rem;
+        justify-content: space-evenly;
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    .footer-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-top{
+        padding: 1rem;
     }
 }
