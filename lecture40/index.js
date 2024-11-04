@@ -37,3 +37,4 @@ console.log(false || true && true || 5)
 //     i++;
 // }
 //deep vs shallow copy
+// duplication or reference pointing
