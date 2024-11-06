@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
     async function fetchUserDetails(username){
         const url = `https://leetcode-stats-api.herokuapp.com/${username}`;
         try {
+            // Hide stats container during the search
+            statsContainer.style.display = "none";
             searchButton.textContent = 'Searching...';
             searchButton.disabled = true;
 
@@ -46,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
             statsContainer.innerHTML = `<p>${error.message}</p>`;
         }
         finally{
+            // Show stats container after the search completes
+            statsContainer.style.display = "block";
             searchButton.textContent = 'Search';
             searchButton.disabled = false;
         }
